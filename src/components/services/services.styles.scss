@@ -1,0 +1,93 @@
+.services {
+  background-color: var(--color-tri);
+  padding: 11rem 14rem;
+  
+   ::selection {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  &_container {
+    margin: 3rem 0;
+  }
+
+  .accordian {
+    margin-top: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-size: 3rem;
+    border-bottom: 1px solid white;
+    padding: 3.6rem 0;
+    gap: 3rem;
+
+    @media only screen and (max-width: 31.5em) {
+      font-size: 2.6rem; //500px
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    &_body {
+      display: flex;
+      justify-content: space-around;
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: #ccc;
+
+      @media only screen and (max-width: 37.5em) {
+        flex-direction: column;
+        padding: 0 2.4rem;
+      }
+    }
+
+    &_list {
+      width: 30%;
+      list-style: inside;
+
+      &-item {
+        margin-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        width: 100%;       
+      }
+    }
+
+    &_cta {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.2px;
+
+      @media only screen and (max-width: 37.5em) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+
+    &_name {
+      display: flex;
+      gap: 3rem;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
+    }
+
+    &_num {
+      font-size: 2rem;
+      color: #ccc;
+    }
+
+    &_icon {
+      cursor: pointer;
+    }
+  }
+}

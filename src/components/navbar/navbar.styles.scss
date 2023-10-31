@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 3.6rem;
+
+  &_logo {
+    margin-left: -1rem;
+  }
+
+  &_links {
+    display: flex;
+    gap: 4.5rem;
+    padding: 1.2rem 5rem;
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--color-black);
+
+    @media only screen and (max-width: 37.5em) {
+      display: none; //600px
+    }
+  }
+
+  .login-btn {
+    @media only screen and (max-width: 37.5em) {
+      display: none; //600px
+    }
+  }
+}

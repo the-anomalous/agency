@@ -1,0 +1,30 @@
+.team {
+  &_members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 2rem;
+
+    .member {
+      text-align: center;
+      margin-top: 6rem;
+
+      &_name {
+        margin-top: 1rem;
+        text-transform: capitalize;
+      }
+
+      &_img {
+        width: 80%;
+      }
+
+      &_position {
+        text-transform: capitalize;
+        color: var(--color-grey-dark);
+        font-weight: 500;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.heading2 {
+  &-pri {
+    font-size: 6rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: var(--color-black);
+
+    @media only screen and (max-width: 31.5em) {
+      font-size: 5rem; //500px
+    }
+  }
+
+  &-sec {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--color-grey-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .light {
+    &-pri {
+      color: var(--color-white);
+    }
+    &-sec {
+      color: #ccc;
+    }
+  }
+}

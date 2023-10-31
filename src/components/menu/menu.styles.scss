@@ -1,0 +1,243 @@
+.menu {
+  position: relative;
+  display: none;
+
+  ::selection {
+    background-color: var(--color-black);
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    display: block;
+  }
+
+  &__btn {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5.2rem;
+    width: 5.2rem;
+    z-index: 100;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__open {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+
+    &--icon {
+      fill: var(--color-black);
+      height: 100%;
+      width: 100%;
+    }
+
+    &--active {
+      height: 0;
+      width: 0;
+      font-size: 0;
+    }
+  }
+
+  &__close {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+    font-size: 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: all .4s;
+
+    &--icon {
+      fill: var(--color-black);
+      height: 100%;
+      width: 100%;
+    }
+
+    &--active {
+      height: 100%;
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+
+  &__background {
+    position: fixed;
+    top: 4.6rem;
+    right: 4.8rem;
+
+    background-color: var(--color-tri);
+    border-radius: 50%;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+
+    transition: all .8s;
+
+    &--active {
+      transform: scale(100);
+      z-index: 10;
+      opacity: 1;
+
+      height: 3rem;
+      width: 3rem;
+
+      transition: transform 1.2s;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: -100%;
+
+    height: 100%;
+    width: 100%;
+    
+    transition: all .5s;
+    z-index: 20;
+
+    &--active {
+      left: 0;
+    }
+  }
+
+  &__items {
+    list-style: none;
+    // margin-top: auto;
+    margin-left: 4rem;
+    // margin-bottom: -2rem;
+
+    @media only screen and (max-width: 31.25em) {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    margin: 4rem;
+    margin-left: 0;
+    opacity: 0;
+    transform: translateX(-3rem);
+
+    transition: all .4s;
+    
+    &--about {
+      transition-delay: .4s;
+    }
+
+    &--projects {
+      transition-delay: .6s;
+    }
+
+    &--contact {
+      transition-delay: .8s;
+    }
+
+    &--resume {
+      transition-delay: 1s;
+    }
+
+    &--active {
+      opacity: 1;
+      transform: translateX(6rem);
+    }
+
+    .link {
+      font-size: 5rem;
+      font-weight: 900;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      position: relative;
+
+      
+      @media only screen and (max-width: 31.25em) {
+        font-size: 4rem;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: inline-block;
+        height: 3px;
+        width: 0;
+        background-color: currentColor;
+        
+        transition: all .2s linear;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &:active {
+      top: 1px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    width: 50%;
+    transform: translateY(-4rem);
+  
+    @media only screen and (max-width: 31.25em) {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    
+    &_link {
+      height: 4rem;
+      width: 4rem;
+      transition: all .1s;
+      transition-delay: .1s;
+
+      &--twitter{
+        stroke: var(--color-black);
+      }
+      
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  &__email {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    letter-spacing: 1px;
+  }
+}
