@@ -26,15 +26,25 @@
     font-weight: 600;
     font-size: 1.6rem;
     color: var(--color-black);
+    position: relative;
 
     @media only screen and (max-width: 37.5em) {
       display: none; //600px
     }
   }
+  
+  &_dropdown {
+    position: absolute;
+    top: 8rem;
+    left: 16rem;
+    display:none;
 
-  .login-btn {
-    @media only screen and (max-width: 37.5em) {
-      display: none; //600px
+    &_links {
+      display:flex;
+      gap: 3rem;
+      flex-direction: column;
+      text-transform: capitalize;
+      color: var(--color-grey-dark);
     }
   }
 }

@@ -1,6 +1,6 @@
 import './App.scss'
 import { Route, Routes, Navigate } from 'react-router-dom'
-import { Home, Contact, About, Services, Courses, Layout } from 'pages'
+import { Home, Contact, About, Courses, Layout, Advertising } from 'pages'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/about-us' element={<About />} />
-            <Route path='/services' element={<Services />} />
+            <Route path='/advertising' element={<Advertising />} />
             <Route path='/courses' element={<Courses />} />
           </Route>
         }

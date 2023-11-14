@@ -13,6 +13,13 @@ const Navbar = () => {
       <ul className='nav_links'>
         <NavLinks />
         <CTABtn name={'contact'} to={'/contact'} />
+        <div className="nav_dropdown">
+          <ul className="nav_dropdown_links">
+            <NavLink to="/advertising">advertising</NavLink>
+            <NavLink to="/digital-marketing">digital marketing</NavLink>
+            <NavLink to="/election-campaign">election campaign</NavLink>
+          </ul>
+        </div>
       </ul>
       <Menu />
     </nav>

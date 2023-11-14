@@ -4,7 +4,7 @@ import data from 'assets/data'
 
 const Courses = () => {
   return (
-    <> 
+    <main className='layout'> 
       <section className="course_page section">
         <Heading2 primary={'grow with us'} secondary={'courses'} />
       <div className="courses_details">
@@ -15,7 +15,7 @@ const Courses = () => {
         </div>
       </div>
       </section>
-    </>
+    </main>
   )
 }
 

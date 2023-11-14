@@ -58,6 +58,7 @@ a:visited,
 a:active {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 p {
@@ -76,7 +77,8 @@ ul {
   padding: 8rem 14rem;
 }
 
-.section, .section_red {
+.section,
+.section_red {
   @media only screen and (max-width: 50em) {
     padding: 6rem 10rem; //800px
   }
@@ -88,7 +90,6 @@ ul {
   @media only screen and (max-width: 25em) {
     padding: 6rem 2rem; //400px
   }
-
 }
 
 ::selection {

@@ -5,7 +5,7 @@ import aboutImg from 'assets/about.webp'
 
 const About = () => {
   return (
-    <>
+    <main className='layout'>
       <header className='about_page section'>
         <Heading2 
           primary={'we connect brands with people'}
@@ -27,7 +27,7 @@ const About = () => {
       </header>
 
       <Team/>
-    </>
+    </main>
   )
 }
 
