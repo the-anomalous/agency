@@ -11,7 +11,7 @@ const NavLinks = ({light}) => {
         </NavLink>
       </li>
       <li className='links'>
-        <NavLink to='/services' className={`link ${light && 'light'}`}>
+        <NavLink to='/advertising' className={`link ${light && 'light'}`}>
           services
         </NavLink>
       </li>

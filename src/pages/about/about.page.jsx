@@ -19,7 +19,7 @@ const About = () => {
           <div className="about_page_intro-img">
             <div className="about_page_intro-square"></div>
             <div className="about_page_intro-circle">
-              <img src={aboutImg} alt="" />
+              <img src={''} alt="" />
             </div>
           </div>
         </section>
