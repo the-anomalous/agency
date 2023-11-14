@@ -1,7 +1,6 @@
 import React from 'react'
 import { Heading2, Team } from 'components'
 import './about.styles.scss'
-import aboutImg from 'assets/about.webp'
 
 const About = () => {
   return (
