@@ -1,13 +1,13 @@
 .links {
   letter-spacing: 0.4px;
-  font-weight: 500;
+  font-weight: inherit;
   text-transform: capitalize;
   transition: all 50ms ease;
   transition-delay: 50ms;
 
   &:hover {
     color: var(--color-tri);
-    transform: translateY(-2px);
+    transform: translateY(-1.5px);
   }
 
   &:active {

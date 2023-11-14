@@ -35,6 +35,21 @@ const data = {
       info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugit molestias. Soluta, facilis eligendi doloribus nihil provident minus quidem accusamus?',
       img: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498362.jpg&fm=jpg'
     },
+    {
+      name: 'Digital Marketing',
+      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugit molestias. Soluta, facilis eligendi doloribus nihil provident minus quidem accusamus?',
+      img: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498362.jpg&fm=jpg'
+    },
+    {
+      name: 'Digital Marketing',
+      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugit molestias. Soluta, facilis eligendi doloribus nihil provident minus quidem accusamus?',
+      img: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498362.jpg&fm=jpg'
+    },
+    {
+      name: 'Digital Marketing',
+      info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugit molestias. Soluta, facilis eligendi doloribus nihil provident minus quidem accusamus?',
+      img: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498362.jpg&fm=jpg'
+    },
   ],
 }
 

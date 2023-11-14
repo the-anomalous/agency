@@ -1,27 +1,21 @@
 import React from 'react'
 import './header.styles.scss'
-import { NavLink } from 'react-router-dom'
+import {SecondaryBtn} from 'components'
 
 const Header = () => {
   return (
     <header className='header'>
-      <div className='header_img'>
-        <h1 className='header_tagline'>
-          <span className='secondary'>
+      <h1 className='header_tagline'>
+        <div className='primary'>
+          Creative <span className="red">perspective.</span> 
+          <br />
+          Strategic <span className="red"> execution.</span>
+          <div className='secondary'>
             Be Seen. Be Heard. Be Known.
-          </span>
-          <div className='primary'>
-            Inspiring Brands <br />
-            Realizing the <span>Unimagined</span>
           </div>
-        </h1>
-        <NavLink to='/contact' className='header_cta'>
-          let's talk
-          <span class='material-symbols-outlined'>
-            arrow_right_alt
-          </span> 
-        </NavLink>
-      </div>
+        </div>
+      </h1>
+      <SecondaryBtn className={'header_btn'} icon={'chevron_right'} name={"let's talk"} to={'/contact'} />
     </header>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { SecondaryBtn, NavLinks, Menu } from 'components'
-import Logo from 'assets/logo.svg'
+import { NavLinks, Menu, CTABtn } from 'components'
+import Logo from 'assets/logo.png'
 import './navbar.styles.scss'
 
 const Navbar = () => {
@@ -12,9 +12,8 @@ const Navbar = () => {
       </NavLink>
       <ul className='nav_links'>
         <NavLinks />
+        <CTABtn name={'contact'} to={'/contact'} />
       </ul>
-
-      <SecondaryBtn name='login' className='login-btn' icon={'login'} />
       <Menu />
     </nav>
   )

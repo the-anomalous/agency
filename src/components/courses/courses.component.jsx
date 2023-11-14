@@ -9,7 +9,8 @@ const Courses = () => {
       <Heading2 primary={'grow with us'} secondary={'courses'} />
       <div className="courses_details">
         <div className='courses_cards'>
-          {data.courses.map(({ name, img, info }) => {
+          {data.courses.map(({ name, img, info }, index) => {
+            if (index < 3) {return}
             return <CourseCard name={name} img={img} info={info} />
           })}
         </div>

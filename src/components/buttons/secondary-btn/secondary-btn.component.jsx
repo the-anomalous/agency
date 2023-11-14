@@ -9,7 +9,7 @@ const SecodaryBtn = ({ to, name, icon, light, className }) => {
         {name}
         {icon && (
           <span className='material-symbols-outlined sec_btn-icon'>{icon}</span>
-        )}
+       )}
       </NavLink>
     </div>
   )

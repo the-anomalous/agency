@@ -16,7 +16,7 @@ const Services = () => {
   }
 
   return (
-    <section className='services section'>
+    <section className='services section_red'>
       <div className='services_container'>
         <Heading2
           primary={'our expertise'}

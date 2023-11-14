@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.styles.scss'
-import Logo from 'assets/logo.svg'
+// import Logo from 'assets/logo.png'
 import {NavLinks} from 'components'
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
       <section className='footer_info'>
         <div className='footer_info_start' >
           <div className='footer_info-logo'>
-            <img src={Logo} alt='Logo image' />
+             {/* <img src={Logo} alt='Logo image' /> */}
           </div>
 
           <div className="footer_info_nav">

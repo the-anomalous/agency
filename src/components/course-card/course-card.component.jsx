@@ -11,7 +11,7 @@ const CourseCard = ({ name, img, info }) => {
       <div className='course_card-info'>
         <h3 className='course_card-name' >{name}</h3>
         <p>{info}</p>
-        <SecondaryBtn to={'/courses'} name={'start learning'}/>
+        <SecondaryBtn className={'course_card-btn'} to={'/courses'} name={'start learning'}/>
       </div>
     </section>
   )

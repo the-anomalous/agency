@@ -1,5 +1,37 @@
 .about {
-  background-color: var(--color-grey-light);
+  background-image: url('./../../assets/bg-img.png');
+  position: relative;
+  margin-top: 40rem;
+  background-repeat: no-repeat;
+  background-position: center;
+
+    @media only screen and (max-width: 37.5em) {
+      margin-top: 20rem;
+    }
+
+
+  &_img {
+    position: absolute;
+    top: -28rem;
+    left: 50%;
+    width: 78rem;
+    transform: translateX(-50%);
+
+    @media only screen and (max-width: 56.25em) {
+      top: -23rem; //900px
+      width: 66rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      top: -21.4rem;
+      width: 60rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      top: -14.4rem;
+      width: 40rem;
+    }
+  }
 
   &_heading {
     &-pri {
@@ -32,6 +64,7 @@
     font-size: 2.6rem;
     line-height: 4rem;
     letter-spacing: 0.2px;
+    color: var(--color-white);
 
     @media only screen and (max-width: 56.25em) {
       padding: 4rem 10rem; //900px

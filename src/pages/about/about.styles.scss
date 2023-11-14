@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 12rem;
+    
     @media only screen and (max-width: 37.5em) {
       justify-content: start;
       flex-direction: column-reverse;

@@ -70,7 +70,13 @@ ul {
 
 .section {
   padding: 6rem 14rem;
+}
 
+.section_red {
+  padding: 8rem 14rem;
+}
+
+.section, .section_red {
   @media only screen and (max-width: 50em) {
     padding: 6rem 10rem; //800px
   }
@@ -82,6 +88,7 @@ ul {
   @media only screen and (max-width: 25em) {
     padding: 6rem 2rem; //400px
   }
+
 }
 
 ::selection {
