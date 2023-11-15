@@ -3,14 +3,14 @@ import { Header, About, Services, CTA, Courses, Experince } from 'components'
 
 const Home = () => {
   return (
-    <>
+    <main className='layout'>
       <Header />      
       <About />
-      <Experince />
       <Services />
       <Courses />
+      <Experince />
       <CTA />
-    </>
+    </main>
   )
 }
 

@@ -9,8 +9,8 @@ const Courses = () => {
         <Heading2 primary={'grow with us'} secondary={'courses'} />
       <div className="courses_details">
         <div className='courses_cards'>
-          {data.courses.map(({ name, img, info }) => {
-            return <CourseCard name={name} img={img} info={info} />
+          {data.courses.map(({ name, img, info }, index) => {
+            return <CourseCard name={name} img={img} info={info} index={index} />
           })}
         </div>
       </div>

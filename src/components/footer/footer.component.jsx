@@ -1,6 +1,5 @@
 import React from 'react'
 import './footer.styles.scss'
-// import Logo from 'assets/logo.png'
 import {NavLinks} from 'components'
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
       <section className='footer_info'>
         <div className='footer_info_start' >
           <div className='footer_info-logo'>
-             {/* <img src={Logo} alt='Logo image' /> */}
+             <img src='https://ik.imagekit.io/ml22hal4lxj/adroyt_images/o-01_5zZiA3slz.png?updatedAt=1700031803112' alt='Logo image' />
           </div>
 
           <div className="footer_info_nav">
@@ -44,7 +43,7 @@ const Footer = () => {
       </section>
 
       <section className='footer_copyright'>
-        <p>© 2023 agency – all rights Reserved.</p>
+        <p>© 2023 adroyt – all rights Reserved.</p>
       </section>
     </footer>
   )

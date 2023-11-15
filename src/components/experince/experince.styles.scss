@@ -1,46 +1,68 @@
 .experince {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  background-color: #ff6200;
 
   &_intro {
-    width: 50%;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    @media only screen and (max-width: 31.25em) {
-      width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    @media only screen and (max-width: 50em) {
+      margin: 2rem 0;
     }
-    letter-spacing: 0.5px;
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column-reverse;
+      gap: 4rem;
+    }
+
+    &-text {
+      color: var(--color-white);
+      width: 50%;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      @media only screen and (max-width: 37.5em) {
+        width: 100%;
+      }
+      letter-spacing: 0.5px;
+    }
+
+    &-img {
+      text-align: center;
+      @media only screen and (max-width: 37.5em) {
+        width: 100%;
+      }
+      img { 
+        @media only screen and (max-width: 50em) {
+          width: 90%;
+        }
+        @media only screen and (max-width: 37.5em) {
+          width: 70%;
+        }
+        @media only screen and (max-width: 37.5em) {
+          width: 60%;
+        }
+
+      }
+    }
   }
 
   &_points_wrapper {
-    margin: 4rem 0;
+    margin-top: 4rem;
   }
 
   &_point {
     margin-bottom: 12rem;
     display: flex;
     justify-content: space-between;
+    color: var(--color-white);
 
     @media only screen and (max-width: 31.25em) {
       flex-direction: column; //500px
       gap: 2rem;
     }
     position: relative;
-
-    &-num {
-      position: absolute;
-      font-size: 18rem;
-      color: #f5f5f5;
-      z-index: -1;
-      font-weight: 700;
-      top: -9rem;
-      left: 4rem;
-
-    @media only screen and (max-width: 31.25em) {
-      font-size: 16rem;
-    }
-    }
   }
 
   &_h3 {
@@ -59,7 +81,7 @@
         width: 8rem;
         height: 3px;
         border-radius: 10px;
-        background-color: var(--color-tri);
+        background-color: var(--color-yellow);
         display: block;
         margin-bottom: 0.5rem;
       }

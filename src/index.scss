@@ -7,9 +7,15 @@
   --color-white: #fff;
   --color-tri: #da0034;
   --color-red: #c32126;
-  --color-yello: #f8d200;
+  --color-yellow: #f8d200;
+  --color-blue: #00ffca;
   --color-grey-dark: #707070;
   --color-grey-light: #fbfbfb;
+
+  --dot-bg: var(--color-blue);
+  --dot-color: var(--color-white);
+  --dot-size: 2.4px;
+  --dot-space: 5.2rem;
 
   &::-webkit-scrollbar {
     width: 14px;
@@ -19,7 +25,7 @@
     border-radius: 8px;
     border: 3px solid transparent;
     background-clip: content-box;
-    background-color: var(--color-tri);
+    background-color: var(--color-yellow);
   }
 
   @media only screen and (min-width: 100em) {

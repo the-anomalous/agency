@@ -2,17 +2,19 @@ import React from 'react'
 import './course-card.styles.scss'
 import {SecondaryBtn} from 'components'
 
-const CourseCard = ({ name, img, info }) => {
+const CourseCard = ({name, color, img, info, index }) => {
   return (
-    <section className='course_card' key={name}>
-      <div className='course_card-img'>
-        <img src={img} alt='card img' />
-      </div>
+    <section className='course_card' style={{backgroundColor:color}} key={`course${index}`}> 
       <div className='course_card-info'>
         <h3 className='course_card-name' >{name}</h3>
         <p>{info}</p>
-        <SecondaryBtn className={'course_card-btn'} to={'/courses'} name={'start learning'}/>
       </div>
+      <div className='course_card-img'>
+        <img src={img} alt='card img' />
+      </div>
+      {
+        // <SecondaryBtn className={'course_card-btn'} to={'/courses'} name={'start learning'}/>
+      }
     </section>
   )
 }
