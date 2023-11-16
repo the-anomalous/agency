@@ -6,8 +6,8 @@ const Home = () => {
     <main className='layout'>
       <Header />      
       <About />
-      <Services />
       <Courses />
+      <Services />
       <Experince />
       <CTA />
     </main>

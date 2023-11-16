@@ -10,13 +10,14 @@ const About = () => {
       <Heading2 
         primary={'who we are...'}
         secondary={'about us'}
+        light
       />
       <div className='about_info'>
         <p className='about_text'>
           We are a creative agency fueling brand innovation and realizing unprecedented digital success. With a focus on visibility and impact, to deliver world-class digital products. 
         </p>
 
-        <SecondaryBtn to={'/about-us'} name={'meet our team'} />
+        <SecondaryBtn to={'/about-us'} name={'meet our team'} light />
       </div>
     </section>
   )

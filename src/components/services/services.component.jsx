@@ -19,7 +19,7 @@ const Services = () => {
     <section className='services section_red'>
       <div className='dotgrid'></div>
       <div className='services_container'>
-        <Heading2 primary={'our expertise'} secondary={'products & services'} />
+        <Heading2 primary={'our expertise'} secondary={'products & services'} light/>
         {data.services.map((service, index) => {
           return (
             <section className='accordian' key={service.num}>
@@ -69,7 +69,7 @@ const Services = () => {
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Placeat praesentium eius vero amet nobis repudiandae nemo
                     </p>
-                    <SecondaryBtn to={service.to} name={'read more'} />
+                    <SecondaryBtn to={service.to} name={'read more'} light/>
                   </div>
                 </div>
               )}
