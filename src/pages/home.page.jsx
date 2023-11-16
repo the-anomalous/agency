@@ -3,7 +3,7 @@ import { Header, About, Services, CTA, Courses, Experince } from 'components'
 
 const Home = () => {
   return (
-    <main className='layout'>
+    <main className=''>
       <Header />      
       <About />
       <Courses />

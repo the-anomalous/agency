@@ -1,9 +1,8 @@
 import React from 'react'
 import { Heading2 } from 'components'
-import data from 'assets/about'
 import './team.styles.scss'
 
-const Team = () => {
+const Team = ({data}) => {
   return (
     <section className='team section'>
       <Heading2 primary={'the specialists'} secondary={'meet our team'} />

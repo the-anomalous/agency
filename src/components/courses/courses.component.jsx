@@ -11,7 +11,7 @@ const Courses = () => {
         <div className='courses_cards'>
           {data.courses.map(({ name, color, img, info }, index) => {
             if (index > 2) {return}
-            return <CourseCard color={color} name={name} img={img} info={info} index={index}/>
+            return <CourseCard color={color} name={name} img={img} info={info} key={`courses${index}`} />
           })}
         </div>
         <PrimaryBtn to={'/courses'} name={'explore all courses'} />

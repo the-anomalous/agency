@@ -10,7 +10,7 @@ const Courses = () => {
       <div className="courses_details">
         <div className='courses_cards'>
           {data.courses.map(({ name, img, info, color }, index) => {
-            return <CourseCard color={color} name={name} img={img} info={info} index={index} />
+            return <CourseCard color={color} name={name} img={img} info={info} key={`coursepage${index}`} />
           })}
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Heading2, Team } from 'components'
+import data from './about'
 import './about.styles.scss'
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
         </section>
       </header>
 
-      <Team/>
+      <Team data={data}/>
     </main>
   )
 }
