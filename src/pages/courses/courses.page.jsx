@@ -1,5 +1,5 @@
 import React from 'react'
-import {Heading2, CourseCard} from 'components'
+import {Heading2, CourseCard, Experince} from 'components'
 import data from 'assets/data'
 
 const Courses = () => {
@@ -9,12 +9,13 @@ const Courses = () => {
         <Heading2 primary={'grow with us'} secondary={'courses'} />
       <div className="courses_details">
         <div className='courses_cards'>
-          {data.courses.map(({ name, img, info }, index) => {
-            return <CourseCard name={name} img={img} info={info} index={index} />
+          {data.courses.map(({ name, img, info, color }, index) => {
+            return <CourseCard color={color} name={name} img={img} info={info} index={index} />
           })}
         </div>
       </div>
       </section>
+      <Experince />
     </main>
   )
 }

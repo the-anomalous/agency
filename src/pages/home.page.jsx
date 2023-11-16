@@ -8,7 +8,8 @@ const Home = () => {
       <About />
       <Courses />
       <Services />
-      <Experince />
+      {// <Experince /> 
+      }
       <CTA />
     </main>
   )
