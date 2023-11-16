@@ -12,6 +12,7 @@
   transition: all 300ms ease-in-out;
   transition-delay: 50ms;
   cursor: pointer;    
+  color: var(--color-white);
 
   &:hover {
     background-color: transparent;

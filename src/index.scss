@@ -5,12 +5,17 @@
 
   --color-black: #111;
   --color-white: #fff;
-  --color-tri: #da0034;
+  --color-blue: #0578C1;
+  --color-blue-light: #009dff;
+  // --color-tri: #da0034;
+  --color-tri: var(--color-blue);
   --color-red: #c32126;
-  --color-yellow: #f8d200;
-  --color-blue: #00ffca;
+  // --color-yellow: #f8d200;
+  --color-yellow: var(--color-blue);
+  --color-cyan: #00ffca;
   --color-grey-dark: #707070;
   --color-grey-light: #fbfbfb;
+  --color-orange:  var(--color-blue);
 
   --dot-bg: var(--color-blue);
   --dot-color: var(--color-white);

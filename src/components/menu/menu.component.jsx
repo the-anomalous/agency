@@ -11,13 +11,13 @@ const Menu = () => {
         <figure
           className={`menu__open ${isMenuActive && 'menu__open--active'} `}
         >
-          <span class='material-symbols-outlined' style={{fontSize:'inherit'}} >menu</span>
+          <span className='material-symbols-outlined' style={{fontSize:'inherit'}} >menu</span>
         </figure>
 
         <figure
           className={`menu__close ${isMenuActive && 'menu__close--active'} `}
         >
-          <span class='material-symbols-outlined' style={{fontSize:'inherit'}}>close</span>
+          <span className='material-symbols-outlined' style={{fontSize:'inherit'}}>close</span>
         </figure>
       </div>
 

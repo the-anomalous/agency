@@ -1,7 +1,7 @@
 .experince {
   display: flex;
   flex-direction: column;
-  background-color: #ff6200;
+  background-color: var(--color-blue-light);
 
   &_intro {
     display: flex;

@@ -22,7 +22,7 @@ const Footer = () => {
         <div className='footer_info-contact'>
           <h4 className='heading4'>find us at</h4>
           <div className='footer_info-contact-details'>
-            <span class='material-symbols-outlined'>
+            <span className='material-symbols-outlined'>
               location_on
             </span>
             <p>
@@ -32,11 +32,11 @@ const Footer = () => {
             </p>
           </div>
           <div className='footer_info-contact-details'>
-            <span class='material-symbols-outlined'>mail</span>
+            <span className='material-symbols-outlined'>mail</span>
             <p>agency4477@gmail.com</p>
           </div>
           <div className='footer_info-contact-details'>
-            <span class='material-symbols-outlined'>call</span>
+            <span className='material-symbols-outlined'>call</span>
             <p>+91 9077882143</p>
           </div>
         </div>

@@ -17,16 +17,14 @@ const Services = () => {
 
   return (
     <section className='services section_red'>
-      <div className="dotgrid"></div>
+      <div className='dotgrid'></div>
       <div className='services_container'>
-        <Heading2
-          primary={'our expertise'}
-          secondary={'products & services'}
-        />
+        <Heading2 primary={'our expertise'} secondary={'products & services'} />
         {data.services.map((service, index) => {
           return (
             <section className='accordian' key={service.num}>
-              <div className='accordian_header'
+              <div
+                className='accordian_header'
                 onClick={() => openCurrentAccordian(index)}
               >
                 <h3 className='accordian_name'>
@@ -34,20 +32,30 @@ const Services = () => {
                   {service.name}
                 </h3>
                 <div className='accordian_icon'>
-                  <span 
-                    class='material-symbols-outlined'
-                    style={!(currentAccordian === index) ? {fontSize: '24px'} : {fontSize: '0'}}>
+                  <span
+                    className='material-symbols-outlined'
+                    style={
+                      !(currentAccordian === index)
+                        ? { fontSize: '24px' }
+                        : { fontSize: '0' }
+                    }
+                  >
                     add
                   </span>
-                  <span 
-                    class='material-symbols-outlined'
-                    style={currentAccordian === index ? {fontSize: '24px'} : {fontSize: '0'}}>
+                  <span
+                    className='material-symbols-outlined'
+                    style={
+                      currentAccordian === index
+                        ? { fontSize: '24px' }
+                        : { fontSize: '0' }
+                    }
+                  >
                     remove
                   </span>
                 </div>
               </div>
 
-              {currentAccordian === index &&
+              {currentAccordian === index && (
                 <div className='accordian_body'>
                   <ul className='accordian_list'>
                     <li className='accordian_list-item'>Lorem ipsum abcde</li>
@@ -64,7 +72,7 @@ const Services = () => {
                     <SecondaryBtn to={service.to} name={'read more'} />
                   </div>
                 </div>
-              }
+              )}
             </section>
           )
         })}
