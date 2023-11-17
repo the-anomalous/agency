@@ -1,7 +1,7 @@
 import React from 'react'
 import { CourseCard, Heading2, PrimaryBtn } from 'components'
 import './courses.styles.scss'
-import data from 'assets/data'
+import data from 'assets/courses'
 
 const Courses = () => {
   return (

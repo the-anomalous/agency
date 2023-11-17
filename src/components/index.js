@@ -15,4 +15,5 @@ export {default as Form} from './form/form.component';
 export {default as NavLinks} from './navlinks/navlink.component';
 export {default as Menu} from './menu/menu.component';
 export {default as Experince} from './experince/experince.component';
-export {default as Conatiner} from './container/container.component';
+export {default as Container} from './container/container.component';
+export {default as HeaderConatiner} from './header-container/header-container.component'
