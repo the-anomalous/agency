@@ -19,7 +19,7 @@
     justify-content: space-evenly;
     
     hr {
-      border: 1px solid var(--color-black);
+      border: 1px solid var(--color-white);
     }
 
     @media only screen and (max-width: 31.25em) {
@@ -33,7 +33,7 @@
     flex-direction: column;
     gap: 1.6rem;
     padding: 0 3rem;
-
+    color: var(--color-white);
     @media only screen and (max-width: 31.25em) {
       padding: 0rem; //500px
     }
@@ -69,7 +69,7 @@
 
 .info {
   text-align: center;
-  
+      color: var(--color-white);
   &_heading {
     font-size: 1.8rem;
   }

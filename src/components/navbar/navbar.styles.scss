@@ -4,12 +4,12 @@
   justify-content: space-between;
   padding: 5rem 12rem;
 
-    @media only screen and (max-width: 56.25em) {
-      padding: 4rem 8rem; //900px
-    }
-    @media only screen and (max-width: 43.75em) {
-      padding: 4rem; //700px
-    }
+  @media only screen and (max-width: 56.25em) {
+    padding: 4rem 8rem; //900px
+  }
+  @media only screen and (max-width: 43.75em) {
+    padding: 4rem; //700px
+  }
 
   &_logo {
     width: 24rem;
@@ -27,24 +27,44 @@
     font-size: 1.6rem;
     color: var(--color-black);
     position: relative;
+    cursor: pointer;
 
     @media only screen and (max-width: 37.5em) {
       display: none; //600px
     }
   }
-  
+
   &_dropdown {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     left: 16rem;
-    display:none;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem .5rem;
+
+    &-active {
+      display: block;
+    }
 
     &_links {
-      display:flex;
-      gap: 3rem;
+      display: flex;
       flex-direction: column;
       text-transform: capitalize;
       color: var(--color-grey-dark);
+      cursor: pointer;
+    }
+
+    &_link {
+      padding: 1rem;
+      border-radius: 2px;
+      margin-bottom: 2px;
+      font-size: 1.4rem; 
+      transition: all ease;
+
+      &:hover {
+        color: var(--color-white);
+        background-color: var(--color-blue);
+      }
     }
   }
 }

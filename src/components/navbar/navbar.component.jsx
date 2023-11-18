@@ -1,23 +1,62 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { NavLinks, Menu, CTABtn } from 'components'
+import { Menu, CTABtn } from 'components'
 import Logo from 'assets/logobg.png'
 import './navbar.styles.scss'
 
 const Navbar = () => {
+  const [toggleDropdown, setToogleDropdown] = useState(false)
+
   return (
     <nav className='nav'>
       <NavLink to='/'>
         <img src={Logo} alt='Logo' className='nav_logo' />
       </NavLink>
       <ul className='nav_links'>
-        <NavLinks />
+        <li className='links'>
+          <NavLink to={'/about-us'} className={`link`}>
+            about us
+          </NavLink>
+        </li>
+        <li className='links'>
+          <NavLink
+            onClick={() => setToogleDropdown(!toggleDropdown)}
+            className={`link`}
+          >
+            services
+          </NavLink>
+        </li>
+        <li className='links'>
+          <NavLink to={'/courses'} className={`link`}>
+            courses
+          </NavLink>
+        </li>
         <CTABtn name={'contact'} to={'/contact'} />
-        <div className="nav_dropdown">
-          <ul className="nav_dropdown_links">
-            <NavLink to="/advertising">advertising</NavLink>
-            <NavLink to="/digital-marketing">digital marketing</NavLink>
-            <NavLink to="/election-campaign">election campaign</NavLink>
+        <div
+          className={`nav_dropdown ${toggleDropdown && 'nav_dropdown-active'}`}
+        >
+          <ul className='nav_dropdown_links'>
+            <NavLink
+              className={'nav_dropdown_link'}
+              to='/advertising'
+              onClick={() => setToogleDropdown(!toggleDropdown)}
+            >
+              advertising
+            </NavLink>
+            <NavLink
+              className={'nav_dropdown_link'}
+              to='/digital-marketing'
+              onClick={() => setToogleDropdown(!toggleDropdown)}
+            >
+              digital marketing
+            </NavLink>
+            <NavLink
+              className={'nav_dropdown_link'}
+              to='/election-campaign'
+              onClick={() => setToogleDropdown(!toggleDropdown)}
+            >
+              election campaign
+            </NavLink>
           </ul>
         </div>
       </ul>

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './navlinks.style.scss'
 
-const NavLinks = ({light}) => {
+const NavLinks = ({ light }) => {
   return (
     <>
       <li className='links'>
@@ -12,14 +12,20 @@ const NavLinks = ({light}) => {
       </li>
       <li className='links'>
         <NavLink to='/advertising' className={`link ${light && 'light'}`}>
-          services
+          advertising
         </NavLink>
       </li>
-      {/* <li className='links'> */}
-      {/*   <NavLink to={'/contact'} className={`link ${light && 'light'}`}> */}
-      {/*     contact */}
-      {/*   </NavLink> */}
-      {/* </li> */}
+      <li className='links'>
+        <NavLink to='/digital-marketing' className={`link ${light && 'light'}`}>
+          digital marketing
+        </NavLink>
+      </li>
+      <li className='links'>
+        <NavLink to='/election-campaign' className={`link ${light && 'light'}`}>
+          election campaign
+        </NavLink>
+      </li>
+
       <li className='links'>
         <NavLink to={'/courses'} className={`link ${light && 'light'}`}>
           courses

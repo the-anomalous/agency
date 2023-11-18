@@ -17,7 +17,7 @@ const Menu = () => {
         <figure
           className={`menu__close ${isMenuActive && 'menu__close--active'} `}
         >
-          <span className='material-symbols-outlined' style={{fontSize:'inherit'}}>close</span>
+          <span class='material-symbols-outlined' style={{fontSize:'inherit'}}>close</span>
         </figure>
       </div>
 
