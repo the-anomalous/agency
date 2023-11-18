@@ -8,7 +8,11 @@ const Footer = () => {
       <section className='footer_info'>
         <div className='footer_info_start' >
           <div className='footer_info-logo'>
-             <img src='https://ik.imagekit.io/ml22hal4lxj/adroyt_images/o-01_5zZiA3slz.png?updatedAt=1700031803112' alt='Logo image' />
+{
+              // <img src='https://ik.imagekit.io/ml22hal4lxj/adroyt_images/o-01_5zZiA3slz.png?updatedAt=1700031803112' alt='Logo image' />
+
+            }
+
           </div>
 
           <div className="footer_info_nav">

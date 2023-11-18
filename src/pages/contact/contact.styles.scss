@@ -1,37 +1,81 @@
 .contact_page {
-  &_info {
+  &_wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    flex-direction: column;
+    gap: 3.2rem;
+    background-color: var(--color-blue);
+    width: min-content;
+    padding: 4.8rem 1.8rem;
 
-    @media only screen and (max-width: 43.75em) {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &-address {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-      letter-spacing: 0.2px;
-      margin-top: 6rem;
-
-      @media only screen and (max-width: 43.75em) {
-        width: 100%;
-      }
-    }
-
-    &-form {
-      margin-top: 6rem;
-      @media only screen and (max-width: 43.75em) {
-        width: 100%;
-      }
+    @media only screen and (max-width: 31.25em) {
+      width: 100%; //500px
     }
   }
 
-  &-heading4 {
+  &-info {
+    display: flex;
+    padding: 0 3rem;
+    justify-content: space-evenly;
+    
+    hr {
+      border: 1px solid var(--color-black);
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      flex-direction: column; //500px
+      gap: 2rem;
+    }
+  }
+
+  &-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 0 3rem;
+
+    @media only screen and (max-width: 31.25em) {
+      padding: 0rem; //500px
+    }
+  }
+
+  &-h3 {
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+
+  &-subheading {
+    font-weight: 700;
+  }
+
+  &-subheading,
+  &-text {
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.4rem; //500px
+    }
+  }
+
+  &-form {
+    // width: fit-content;
+    // display: flex;
+    //
+    // @media only screen and (max-width: 31.25em) {
+    //   display: block;
+    // }
+  }
+}
+
+.info {
+  text-align: center;
+  
+  &_heading {
     font-size: 1.8rem;
-    text-transform: capitalize;
+  }
+
+  & > p,
+  h4 {
+    margin-bottom: 6px;
   }
 }
