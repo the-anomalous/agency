@@ -1,5 +1,12 @@
 .contact_page {
+  &_map {
+    position: absolute;
+    inset: 0;
+  }
+
   &_wrapper {
+    z-index: 100;
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -17,7 +24,7 @@
     display: flex;
     padding: 0 3rem;
     justify-content: space-evenly;
-    
+
     hr {
       border: 1px solid var(--color-white);
     }
@@ -69,7 +76,7 @@
 
 .info {
   text-align: center;
-      color: var(--color-white);
+  color: var(--color-white);
   &_heading {
     font-size: 1.8rem;
   }
