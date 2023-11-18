@@ -122,7 +122,10 @@ const Menu = () => {
             <NavLink
               to={'/about-us'}
               className='link'
-              onClick={() => setIsMenuActive(!isMenuActive)}
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(false)
+                }}
             >
               about us
             </NavLink>
@@ -135,7 +138,10 @@ const Menu = () => {
             <NavLink
               to={'/contact'}
               className='link'
-              onClick={() => setIsMenuActive(!isMenuActive)}
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(false)
+                }}
             >
               Contact
             </NavLink>
@@ -148,7 +154,10 @@ const Menu = () => {
             <NavLink
               to={'/courses'}
               className='link'
-              onClick={() => setIsMenuActive(!isMenuActive)}
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(false)
+                }}
             >
               courses
             </NavLink>

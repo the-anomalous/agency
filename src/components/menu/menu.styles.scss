@@ -21,7 +21,7 @@
 
     height: 5.2rem;
     width: 5.2rem;
-    z-index: 100;
+    z-index: 10000;
     background-color: var(--color-white);
     border-radius: 50%;
     cursor: pointer;
@@ -77,7 +77,6 @@
     position: fixed;
     top: 4.6rem;
     right: 4.8rem;
-
     background-color: var(--color-tri);
     border-radius: 50%;
     z-index: 10;
@@ -88,7 +87,7 @@
 
     &--active {
       transform: scale(100);
-      z-index: 10;
+      z-index: 1000;
       opacity: 1;
 
       height: 3rem;
@@ -111,7 +110,7 @@
     width: 100%;
 
     transition: all 0.5s;
-    z-index: 20;
+    z-index: 1000;
 
     &--active {
       left: 0;
