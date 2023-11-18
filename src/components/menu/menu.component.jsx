@@ -4,6 +4,7 @@ import './menu.styles.scss'
 
 const Menu = () => {
   const [isMenuActive, setIsMenuActive] = useState(false)
+  const [toggleDropdown, setToggleDropdown] = useState(false)
 
   return (
     <div className='menu'>
@@ -11,13 +12,23 @@ const Menu = () => {
         <figure
           className={`menu__open ${isMenuActive && 'menu__open--active'} `}
         >
-          <span className='material-symbols-outlined' style={{fontSize:'inherit'}} >menu</span>
+          <span
+            className='material-symbols-outlined'
+            style={{ fontSize: 'inherit' }}
+          >
+            menu
+          </span>
         </figure>
 
         <figure
           className={`menu__close ${isMenuActive && 'menu__close--active'} `}
         >
-          <span class='material-symbols-outlined' style={{fontSize:'inherit'}}>close</span>
+          <span
+            class='material-symbols-outlined'
+            style={{ fontSize: 'inherit' }}
+          >
+            close
+          </span>
         </figure>
       </div>
 
@@ -35,13 +46,62 @@ const Menu = () => {
             }`}
           >
             <NavLink
-              to={'/services'}
               className='link'
-              onClick={() => setIsMenuActive(!isMenuActive)}
+               onClick={() => setToggleDropdown(!toggleDropdown)}
             >
               Services
             </NavLink>
           </li>
+          <div className={`menu__dropdown ${toggleDropdown && 'menu__dropdown-active'}`}>
+            <li
+              className={`menu__dropdown-link ${
+                isMenuActive && 'menu__link--active'
+              }`}
+            >
+              <NavLink
+                to={'/digital-marketing'}
+                className='link'
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(!toggleDropdown)
+                }}
+              >
+                digital marketing
+              </NavLink>
+            </li>
+            <li
+              className={`menu__dropdown-link ${
+                isMenuActive && 'menu__link--active'
+              }`}
+            >
+              <NavLink
+                to={'/advertising'}
+                className='link'
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(!toggleDropdown)
+                }}
+              >
+                Advertising
+              </NavLink>
+            </li>
+            <li
+              className={`menu__dropdown-link ${
+                isMenuActive && 'menu__link--active'
+              }`}
+            >
+              <NavLink
+                to={'/election-campaign'}
+                className='link'
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(!toggleDropdown)
+                }}
+              >
+                election campaign
+              </NavLink>
+            </li>
+          </div>
           <li
             className={`menu__link menu__link--projects ${
               isMenuActive && 'menu__link--active'

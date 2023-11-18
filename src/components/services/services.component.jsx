@@ -58,16 +58,18 @@ const Services = () => {
               {currentAccordian === index && (
                 <div className='accordian_body'>
                   <ul className='accordian_list'>
-                    <li className='accordian_list-item'>Lorem ipsum abcde</li>
-                    <li className='accordian_list-item'>Lorem ipsum abcde</li>
-                    <li className='accordian_list-item'>Lorem ipsum abcde</li>
-                    <li className='accordian_list-item'>Lorem ipsum abcde</li>
+                    {
+                      service.points.map((data, index) => {
+                        return (
+                          <li key={`points${index}`} className='accordian_list-item'>{data}</li>
+                        )
+                      })
+                    }
                   </ul>
 
                   <div className='accordian_cta'>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Placeat praesentium eius vero amet nobis repudiandae nemo
+                      {service.text}
                     </p>
                     <SecondaryBtn to={service.to} name={'read more'} light/>
                   </div>
