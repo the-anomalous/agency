@@ -2,7 +2,7 @@ import { useEffect, lazy, Suspense } from 'react'
 import './App.scss'
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom'
 import Layout from 'pages/layout/layout.page'
-import { ErrorBoundary } from 'components'
+import { Loader } from 'components'
 
 const Home = lazy(() => import('pages/home.page'))
 const Contact = lazy(() => import('pages/contact/contact.page'))
@@ -13,7 +13,7 @@ const Marketing = lazy(() => import('pages/marketing/marketing.page'))
 const Election = lazy(() => import('pages/election/election.page'))
 
 const LazyLoad = ({ page }) => {
-  return <Suspense fallback={<ErrorBoundary />}>{page}</Suspense>
+  return <Suspense fallback={<Loader />}>{page}</Suspense>
 }
 
 const ScrollToTop = () => {

@@ -17,4 +17,4 @@ export {default as Menu} from './menu/menu.component';
 export {default as Experince} from './experince/experince.component';
 export {default as Container} from './container/container.component';
 export {default as HeaderConatiner} from './header-container/header-container.component'
-export {default as ErrorBoundary} from './error-boundary/error-boundary.component';
+export {default as Loader} from './loader/loader.component';
