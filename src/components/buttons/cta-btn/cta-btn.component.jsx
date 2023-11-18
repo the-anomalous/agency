@@ -4,12 +4,12 @@ import './cta-btn.styles.scss'
 
 const CTABtn = ({ name, to, children }) => {
   return (
-    <div className='cta-btn'>
       <NavLink to={to}>
+      <div className='cta-btn'>
         {name}
         {children}
+      </div>
       </NavLink>
-    </div>
   )
 }
 

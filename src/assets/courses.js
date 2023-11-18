@@ -1,19 +1,8 @@
 const data = {
   intro: [
     {
-      heading1: 'Expert Lecturers &',
-      heading2: 'Their Guidance',
-      content: [
-        ' Dialogue with experts helps students to develop a clear idea of the path they want to take in the IT industry and help them to choose a path in any sub- of IT. There are multiple reasons to attend guest lectures or the Workshops/Seminars.',
-        "The Students get to see the insight and perspective of the guest lecturer's specific field.",
-        ' The format can enable students to interact with professionals in formal and informal settings. Through discussions; interpersonal competence and communicative skills are fostered.',
-        'Even our experts are keen on getting the feedback of the students.',
-      ],
-      img: '',
-    },
-    {
-      heading1: 'Students Benefit from',
-      heading2: 'The program',
+      headingPri: 'Students Benefit from The program',
+      headingSec: '',
       content: [
         'Students can organize their time and learn in a suitable time slot of their choice. (discuss with team)',
         'They can also undertake subjects and courses that are outside their course curriculum for enhanced knowledge.',
@@ -21,7 +10,18 @@ const data = {
         'It will increase the effectiveness and efficiency of educational system.',
         'Student gains actual technical knowledge here. Also, they will get an outlook of the working of the IT industry.',
       ],
-      img: '',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/bendy-man-developer-writing-programming-code_a8bEUL5TW.png?updatedAt=1700320835492',
+    },
+    {
+      headingPri: 'Expert Lecturers & Their Guidance',
+      headingSec: '',
+      content: [
+        ' Dialogue with experts helps students to develop a clear idea of the path they want to take in the IT industry and help them to choose a path in any sub- of IT. There are multiple reasons to attend guest lectures or the Workshops/Seminars.',
+        "The Students get to see the insight and perspective of the guest lecturer's specific field.",
+        ' The format can enable students to interact with professionals in formal and informal settings. Through discussions; interpersonal competence and communicative skills are fostered.',
+        'Even our experts are keen on getting the feedback of the students.',
+      ],
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/juicy-a-teacher-explains-new-material_NHn4Lt6Pv.png?updatedAt=1700321004678',
     },
   ],
   courses: [

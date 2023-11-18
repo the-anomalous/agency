@@ -4,6 +4,7 @@
   text-transform: capitalize;
   transition: all 50ms ease;
   transition-delay: 50ms;
+  display: flex;
 
   &:hover {
     color: var(--color-black);

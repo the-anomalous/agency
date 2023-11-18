@@ -18,9 +18,9 @@
     }
   }
 
-
   &_links {
     &-link {
+      display: flex;
       .link {
         &:hover {
           color: var(--color-blue);

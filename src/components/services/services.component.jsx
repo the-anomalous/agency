@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import data from 'assets/data'
+import data from './services'
 import { Heading2, SecondaryBtn } from 'components'
 import './services.styles.scss'
 
@@ -20,7 +20,7 @@ const Services = () => {
       <div className='dotgrid'></div>
       <div className='services_container'>
         <Heading2 primary={'our expertise'} secondary={'products & services'} light/>
-        {data.services.map((service, index) => {
+        {data.map((service, index) => {
           return (
             <section className='accordian' key={service.num}>
               <div

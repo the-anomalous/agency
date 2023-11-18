@@ -2,7 +2,7 @@ const data = {
   header: {
     headingPri: 'Election Campaign',
     headingSec: 'services',
-    content: 'Welcome to Adroyt Hub – Where Your Brand Meets Brilliance! Elevate your online presence with strategic your personal branding. We craft compelling narratives, showcase your expertise, and amplify your unique voice. Let Adroyt Hub be your guide in building a powerful and authentic digital identity that leaves a lasting impression. Your brand, our expertise – let\'s make waves together.',
+    content: ['Welcome to Adroyt Hub – Where Your Brand Meets Brilliance! Elevate your online presence with strategic your personal branding. We craft compelling narratives, showcase your expertise, and amplify your unique voice. Let Adroyt Hub be your guide in building a powerful and authentic digital identity that leaves a lasting impression. Your brand, our expertise – let\'s make waves together.'],
     img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/loudspeaker-in-the-phone_JG0lxHijFD.gif?updatedAt=1700205872468',
   },
   content: [

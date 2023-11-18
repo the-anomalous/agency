@@ -18,13 +18,12 @@ const Navbar = () => {
             about us
           </NavLink>
         </li>
-        <li className='links  nav_links-link'>
-          <NavLink
-            onClick={() => setToogleDropdown(!toggleDropdown)}
-            className={`link`}
-          >
-            services
-          </NavLink>
+        <li
+          onClick={() => setToogleDropdown(!toggleDropdown)}
+          className='links  nav_links-link'
+          style={{ display: 'flex' }}
+        >
+          <NavLink className={`link`}>services</NavLink>
           <span class='material-symbols-outlined'>keyboard_arrow_down</span>
         </li>
         <li className='links  nav_links-link'>

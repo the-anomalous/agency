@@ -3,7 +3,7 @@ const data = {
     headingPri: 'Advertising',
     headingSec: 'services',
     content:
-      'The projects we handle revolve around digital marketing and e-commerce growth. Your results matter to us. Acting as an addition to your in-house team, we add value with our extensive experience. Successful business transformation demands a smart investment in platforms. Our certified experts have a deep understanding of each platform.',
+      ['The projects we handle revolve around digital marketing and e-commerce growth. Your results matter to us. Acting as an addition to your in-house team, we add value with our extensive experience. Successful business transformation demands a smart investment in platforms. Our certified experts have a deep understanding of each platform.'],
     img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/advertising_34kSPr5B1I.gif?updatedAt=1700205878158',
   },
 
