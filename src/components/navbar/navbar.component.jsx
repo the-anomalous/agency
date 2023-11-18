@@ -13,20 +13,21 @@ const Navbar = () => {
         <img src={Logo} alt='Logo' className='nav_logo' />
       </NavLink>
       <ul className='nav_links'>
-        <li className='links'>
+        <li className='links nav_links-link'>
           <NavLink to={'/about-us'} className={`link`}>
             about us
           </NavLink>
         </li>
-        <li className='links'>
+        <li className='links  nav_links-link'>
           <NavLink
             onClick={() => setToogleDropdown(!toggleDropdown)}
             className={`link`}
           >
             services
           </NavLink>
+          <span class='material-symbols-outlined'>keyboard_arrow_down</span>
         </li>
-        <li className='links'>
+        <li className='links  nav_links-link'>
           <NavLink to={'/courses'} className={`link`}>
             courses
           </NavLink>
