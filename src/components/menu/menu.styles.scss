@@ -121,6 +121,7 @@
   &__items {
     list-style: none;
     margin-left: 4rem;
+    margin-top: auto;
 
     @media only screen and (max-width: 31.25em) {
       margin-left: 0;
@@ -233,21 +234,7 @@
   &__social {
     display: flex;
     justify-content: space-evenly;
-
-    &_link {
-      height: 4rem;
-      width: 4rem;
-      transition: all 0.1s;
-      transition-delay: 0.1s;
-
-      &--twitter {
-        stroke: var(--color-black);
-      }
-
-      &:hover {
-        transform: translateY(-4px);
-      }
-    }
+    margin: 0 2rem;
   }
 
   &__email {
@@ -257,4 +244,8 @@
     color: var(--color-black);
     letter-spacing: 1px;
   }
+}
+
+.social__link {
+  font-size: 4rem;
 }

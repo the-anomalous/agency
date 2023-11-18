@@ -2,6 +2,14 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './menu.styles.scss'
 
+const SocialLink = ({to, icon}) => {
+  return (
+    <a href={to} className='social__link' >
+      <i className={`fa-brands ${icon}`} style={{ color: '#000111' }}></i>
+    </a>
+  )
+}
+
 const Menu = () => {
   const [isMenuActive, setIsMenuActive] = useState(false)
   const [toggleDropdown, setToggleDropdown] = useState(false)
@@ -47,12 +55,16 @@ const Menu = () => {
           >
             <NavLink
               className='link'
-               onClick={() => setToggleDropdown(!toggleDropdown)}
+              onClick={() => setToggleDropdown(!toggleDropdown)}
             >
               Services
             </NavLink>
           </li>
-          <div className={`menu__dropdown ${toggleDropdown && 'menu__dropdown-active'}`}>
+          <div
+            className={`menu__dropdown ${
+              toggleDropdown && 'menu__dropdown-active'
+            }`}
+          >
             <li
               className={`menu__dropdown-link ${
                 isMenuActive && 'menu__link--active'
@@ -142,6 +154,15 @@ const Menu = () => {
             </NavLink>
           </li>
         </ul>
+        <div className='menu__contact'>
+          <div className="menu__social">
+            <SocialLink to={''} icon={'fa-youtube'} />
+            <SocialLink to={''} icon={'fa-instagram'} />
+            <SocialLink to={''} icon={'fa-linkedin'} />
+            <SocialLink to={''} icon={'fa-twitter'} />
+          </div>
+          <p className='menu__email'>adityamusale4477@gmail.com</p>
+        </div>
       </div>
     </div>
   )
