@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, About, Services, CTA, Courses, Experince } from 'components'
+import { Header, About, Services, CTA, Courses} from 'components'
 
 const Home = () => {
   return (
@@ -8,8 +8,6 @@ const Home = () => {
       <About />
       <Courses />
       <Services />
-      {// <Experince /> 
-      }
       <CTA />
     </main>
   )

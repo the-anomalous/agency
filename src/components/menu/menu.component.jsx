@@ -5,7 +5,7 @@ import './menu.styles.scss'
 const SocialLink = ({to, icon}) => {
   return (
     <a href={to} className='social__link' >
-      <i className={`fa-brands ${icon}`} style={{ color: '#000111' }}></i>
+      <i className={`fa-brands ${icon}`} style={{ color: '#fbfbfb' }}></i>
     </a>
   )
 }
@@ -47,9 +47,25 @@ const Menu = () => {
       ></div>
 
       <div className={`menu__bar ${isMenuActive && 'menu__bar--active'}`}>
-        <ul className='menu__items'>
+        <ul className='menu__items'> 
           <li
             className={`menu__link menu__link--about ${
+              isMenuActive && 'menu__link--active'
+            }`}
+          >
+            <NavLink
+              to={'/about-us'}
+              className='link'
+                onClick={() => {
+                  setIsMenuActive(!isMenuActive)
+                  setToggleDropdown(false)
+                }}
+            >
+              about us
+            </NavLink>
+          </li>
+          <li
+            className={`menu__link menu__link--services ${
               isMenuActive && 'menu__link--active'
             }`}
           >
@@ -113,21 +129,21 @@ const Menu = () => {
                 election campaign
               </NavLink>
             </li>
-          </div>
+          </div> 
           <li
-            className={`menu__link menu__link--projects ${
+            className={`menu__link menu__link--course ${
               isMenuActive && 'menu__link--active'
             }`}
           >
             <NavLink
-              to={'/about-us'}
+              to={'/courses'}
               className='link'
                 onClick={() => {
                   setIsMenuActive(!isMenuActive)
                   setToggleDropdown(false)
                 }}
             >
-              about us
+              courses
             </NavLink>
           </li>
           <li
@@ -146,22 +162,6 @@ const Menu = () => {
               Contact
             </NavLink>
           </li>
-          <li
-            className={`menu__link menu__link--resume ${
-              isMenuActive && 'menu__link--active'
-            }`}
-          >
-            <NavLink
-              to={'/courses'}
-              className='link'
-                onClick={() => {
-                  setIsMenuActive(!isMenuActive)
-                  setToggleDropdown(false)
-                }}
-            >
-              courses
-            </NavLink>
-          </li>
         </ul>
         <div className='menu__contact'>
           <div className="menu__social">
@@ -170,7 +170,7 @@ const Menu = () => {
             <SocialLink to={''} icon={'fa-linkedin'} />
             <SocialLink to={''} icon={'fa-twitter'} />
           </div>
-          <p className='menu__email'>adityamusale4477@gmail.com</p>
+          <p className='menu__email'>hello@adroythub.com</p>
         </div>
       </div>
     </div>

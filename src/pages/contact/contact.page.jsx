@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form } from 'components'
+import { Form, CTA } from 'components'
 import './contact.styles.scss'
 
 const ContactInfo = ({heading, num, email}) => {

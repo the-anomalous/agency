@@ -11,8 +11,9 @@
   font-weight: 600;
   transition: all 300ms ease-in-out;
   transition-delay: 50ms;
-  cursor: pointer;    
+  cursor: pointer;
   color: var(--color-white);
+  letter-spacing: normal;
 
   &:hover {
     background-color: transparent;

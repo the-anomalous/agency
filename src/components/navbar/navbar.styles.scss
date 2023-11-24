@@ -8,13 +8,13 @@
     padding: 4rem 8rem; //900px
   }
   @media only screen and (max-width: 43.75em) {
-    padding: 4rem; //700px
+    padding: 3rem 4rem; //700px
   }
 
   &_logo {
-    width: 24rem;
+    width: 26rem;
     @media only screen and (max-width: 43.75em) {
-      width: 20rem; //700px
+      // width: 20rem; //700px
     }
   }
 

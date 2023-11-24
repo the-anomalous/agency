@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, HeaderConatiner} from 'components'
+import { Container, HeaderConatiner, CTA } from 'components'
 import data from './advertising.js'
 import './advertising.styles.scss'
 
@@ -9,11 +9,10 @@ const Advertising = () => {
       <HeaderConatiner data={data.header} />
       <section className='section'>
         {data.content.map((data, index) => {
-          return (
-            <Container data={data} key={`advertising${index}`} />
-          ) 
+          return <Container data={data} key={`advertising${index}`} />
         })}
       </section>
+      <CTA />
     </main>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading2, CourseCard, Experince, HeaderConatiner } from 'components'
+import { Heading2, CourseCard, Experince, HeaderConatiner, CTA } from 'components'
 import data from 'assets/courses'
 import './courses.style.scss'
 
@@ -28,6 +28,7 @@ const Courses = () => {
         </div>
       </section>
       <Experince />
+      <CTA />
     </main>
   )
 }

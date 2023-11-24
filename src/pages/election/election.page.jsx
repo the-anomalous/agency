@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, HeaderConatiner} from 'components'
+import {Container, HeaderConatiner, CTA} from 'components'
 import './election.styles.scss'
 import data from './election'
 
@@ -14,6 +14,7 @@ const Election = () => {
           ) 
         })}
       </section>
+      <CTA />
     </main>
   )
 }

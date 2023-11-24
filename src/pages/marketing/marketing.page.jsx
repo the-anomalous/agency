@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, HeaderConatiner} from 'components'
+import { Container, HeaderConatiner, CTA } from 'components'
 import data from './marketing.js'
 import './marketing.styles.scss'
 
@@ -14,6 +14,7 @@ const Marketing = () => {
           )
         })}
       </section>
+      <CTA />
     </main>
   )
 }
