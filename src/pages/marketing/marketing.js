@@ -10,35 +10,32 @@ const data = {
       heading1: 'Increase Website',
       heading2: 'Traffic',
       content:
-        'We’ll help to expand awareness of your brand and attract qualified new audiences to your website through blogging, search engine optimization, social media, email marketing, online ads and more.',
+        'SEO involves optimizing website content, structure, and links to make it more attractive to search engines. This helps improve search rankings, driving organic (non-paid) traffic.',
       img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/webaite-traffic_xV1zx5Vr2.png?updatedAt=1700135277910',
     },
     {
       heading1: 'Build Marketing',
       heading2: 'Strategy',
       content:
-        'Together, we’ll set up a strategy and a plan that will form the foundation of your marketing success. This will include a marketing game plan, buyer profiling, a content calendar, Creative Book, Marketing CRM, Campaign strategies, automation, etc.',
+'Leveraging social media platforms (e.g., Facebook, Instagram, Twitter) to share content, interact with users, and build brand awareness. It\'s a way to connect directly with your target audience.',
       img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/project-management_4GFf3QX84.png?updatedAt=1700136664403',
     },
     {
-      heading1: 'Generate More',
-      heading2: 'Leads',
-      content:
-        'We will focus on helping your business generate more leads with high conversion rate strategic campaigns, in order to grow your contacts using landing pages, forms, CTAs, and content.',
+      heading1: 'Content Marketing',
+      heading2: '',
+      content: 'Creating and distributing relevant and valuable content (blog posts, videos, infographics) to attract and retain a target audience. It helps establish authority and credibility.',
       img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/customer-segmentation-in-mind_J0jSP4ET2F.png?updatedAt=1700138808733',
     },
     {
-      heading1: 'Acquire New',
-      heading2: 'Customers',
-      content:
-        'Visits will become leads and leads will become customers. We will use educational content and sales tools, to help you find and nurture qualified traffic and leads, bringing you valuable, happy customers that close quicker and spend more.',
+      heading1: 'Email Marketing',
+      heading2: '',
+      content: 'Sending targeted emails to a list of subscribers. This can include newsletters, promotional offers, and personalized content to nurture leads and retain customers.',
       img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/customer-service_8CdXe9b9T.png?updatedAt=1700138547201',
     },
     {
-      heading1: 'Marketing',
-      heading2: 'Performance',
-      content:
-        'What’s working and what’s not? Together, we’ll track and analyze your most important metrics to understand where your marketing stands and where it needs to be to achieve your goals.',
+      heading1: 'Online Advertising',
+      heading2: '',
+      content: 'Utilizing platforms like Google Ads, Facebook Ads, or display advertising to reach a specific audience. Advertisers pay when users interact with their ads, helping to drive traffic and conversions.',
       img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/marketing-strategy_mxf8VpQ_uS.png?updatedAt=1700135555614',
     },
     {
