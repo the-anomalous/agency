@@ -24,7 +24,7 @@ const Navbar = () => {
           style={{ display: 'flex' }}
         >
           <NavLink className={`link`}>services</NavLink>
-          <span class='material-symbols-outlined'>keyboard_arrow_down</span>
+          <span className='material-symbols-outlined'>keyboard_arrow_down</span>
         </li>
         <li className='links  nav_links-link'>
           <NavLink to={'/courses'} className={`link`}>
