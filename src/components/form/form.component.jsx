@@ -1,49 +1,19 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { PrimaryBtn } from 'components'
 import './form.styles.scss'
 
 const Form = () => {
-  const formRef = useRef();
+  const formRef = useRef()
 
-// console.log(form.current[1])
+  const [resolving, setResolving] = useState(false)
   // const [error, setError] = useState('')
-  // const [resolving, setResolving] = useState(false)
   // const [success, setSuccess] = useState(false)
 
-  const handleChange = ({ target }) => {
-    setInfo((prevInfo) => {
-      return { ...prevInfo, [target.name]: target.value }
-    })
-  }
-
-  const sendEmail = async (e) => {
-    e.preventDefault()
-    const serviceID = 'service_uh8w91e'
-    const templeateID = 'template_mfmnqbr'
-    const publicID = 'TKEaPcWm62gF9bqt6'
-    try {
-      await emailjs.sendForm(
-        serviceID,
-        templeateID,
-        formRef.current,
-        publicID,
-      )
-      alert('Email sent')
-    } catch (err) {
-      alert('email not sent')
-      console.log(err)
-    }
-  }
-
   const clearForm = () => {
-    setResolving(() => false)
-    setInfo({
-      name: '',
-      email: '',
-      subject: '',
-      text: '',
-    })
+    const inputElements = formRef.current
+    for (let i = 0; i < 4; i++) {
+      inputElements[i].value = ''
+    }
   }
 
   // const onSuccess = () => {
@@ -57,6 +27,23 @@ const Form = () => {
   //   clearForm()
   //   setTimeout(() => setError(''), 2000)
   // }
+  const sendEmail = async (e) => {
+    e.preventDefault()
+    const serviceID = 'service_uh8w91e'
+    const templeateID = 'template_mfmnqbr'
+    const publicID = 'TKEaPcWm62gF9bqt6'
+    try {
+      setResolving(true)
+      await emailjs.sendForm(serviceID, templeateID, formRef.current, publicID)
+      clearForm()
+      setResolving(false)
+      setTimeout(() => alert('Email sent'), 0)     
+    } catch (err) {
+      setResolving(false)
+      setTimeout(() => alert('Email not sent'), 0)     
+      // console.log(err)
+    }
+  }
 
   return (
     <form ref={formRef} className='form' onSubmit={sendEmail}>
@@ -114,12 +101,19 @@ const Form = () => {
           Message
         </label>
       </div>
-      <div className='form__btn'>
-        <button type='submit'> send message</button>
-        {
-          // <PrimaryBtn name={'send message'}  />
-        }
-      </div>
+      <button type='submit' className='submit_btn'>
+        {resolving ? (
+          <i
+            class='fa-solid fa-spinner fa-spin-pulse'
+            style={{ color: '#2874f0' }}
+          ></i>
+        ) : (
+          <i
+            class='fa-solid fa-arrow-right-to-bracket'
+            style={{ color: '#2874f0' }}
+          ></i>
+        )}
+      </button>
     </form>
   )
 }

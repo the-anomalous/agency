@@ -1,4 +1,5 @@
 .form {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr repeat(2, 25rem) 1fr;
   column-gap: 3rem;
@@ -20,7 +21,7 @@
     color: var(--color-secondary);
     font-size: 1.8rem;
   }
-  
+
   &__name {
     grid-column: 2 / 3;
   }
@@ -69,7 +70,7 @@
       bottom: 0;
       left: 0;
 
-      transition: all .2s linear;
+      transition: all 0.2s linear;
     }
   }
 
@@ -88,10 +89,10 @@
     font-size: 1.5rem;
     opacity: 1;
 
-    transition: all .25s linear;
+    transition: all 0.25s linear;
   }
 
-  &__input:placeholder-shown~.form__label {
+  &__input:placeholder-shown ~ .form__label {
     z-index: -1;
     top: 1rem;
     left: 1rem;
@@ -144,5 +145,25 @@
 
   .loader:after {
     left: 3.5em;
+  }
+}
+
+.submit_btn {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  border: none;
+  font-size: 2rem;
+
+  position: absolute;
+  bottom: -3rem;
+  right: 4rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 100ms ease;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
