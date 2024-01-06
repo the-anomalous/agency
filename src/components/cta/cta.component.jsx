@@ -13,7 +13,7 @@ const CTA = () => {
         </div>
         <div className='cta_img'>
           <img
-            src='https://ik.imagekit.io/ml22hal4lxj/adroyt_images/cta_auto_x2_qUod7KBgg.png?updatedAt=1700030690198'
+            src="https://ik.imagekit.io/qrw1xgcj7/adryothub-media/img/cta_auto_x2.png?updatedAt=1704551932521"
             alt='cta img'
           />
         </div>

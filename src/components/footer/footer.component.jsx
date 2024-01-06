@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer_info_start'>
           <div className='footer_info-logo'>
             {
-              // <img src='https://ik.imagekit.io/ml22hal4lxj/adroyt_images/o-01_5zZiA3slz.png?updatedAt=1700031803112' alt='Logo image' />
+              <img src='https://ik.imagekit.io/qrw1xgcj7/adryothub-media/img/20240105_205958.png?updatedAt=1704551921198' alt='Logo image' />
             }
           </div>
 

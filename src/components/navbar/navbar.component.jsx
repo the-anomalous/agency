@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu, CTABtn } from 'components'
-import Logo from 'assets/logobg.png'
 import './navbar.styles.scss'
 
 const Navbar = () => {
@@ -10,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className='nav'>
       <NavLink to='/'>
-        <img src={Logo} alt='Logo' className='nav_logo' />
+        <img src={"https://ik.imagekit.io/qrw1xgcj7/adryothub-media/img/logobg.png?updatedAt=1704554734832"} alt='Logo' className='nav_logo' />
       </NavLink>
       <ul className='nav_links'>
         <li className='links nav_links-link'>

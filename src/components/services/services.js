@@ -28,7 +28,7 @@ const data = [
       to: '/election-campaign',
       num: '03.',
       points: [
-        'digital camaiging',
+        'digital campaigning',
         'event cordination',
         'tailored solutions',
         'expert team',
