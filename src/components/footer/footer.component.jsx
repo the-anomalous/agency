@@ -32,11 +32,11 @@ const Footer = () => {
           </div>
           <div className='footer_info-contact-details'>
             <span className='material-symbols-outlined'>mail</span>
-            <p>hello@adroythub.com</p>
+            <p>official@adroythub.com</p>
           </div>
           <div className='footer_info-contact-details'>
             <span className='material-symbols-outlined'>call</span>
-            <p>+91 9665675234</p>
+            <p>+91 9130061891</p>
           </div>
         </div>
       </section>

@@ -46,26 +46,26 @@ const data = {
       heading1: 'Transparency in',
       heading2: 'Budgeting',
       content: 'Clearly outline your pricing structure and any associated costs. Emphasize transparency in budgeting to build trust with potential clients.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/advertising_RdUU8LzuD.png?updatedAt=1699981631957',
     },
-    {
-      heading1: 'Expert Team',
-      heading2: '',
-      content: 'Introduce key team members and their expertise in political campaign support. Highlight relevant experience and successes.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
-    },
-    {
-      heading1: 'Collaborations & Affiliations',
-      heading2: '',
-      content: 'Showcase any partnerships or collaborations that enhance your business\'s capabilities. Highlight affiliations with industry experts or organizations.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
-    },
-    {
-      heading1: 'Contact Information &',
-      heading2: 'Consultation',
-      content: 'Provide clear and easily accessible contact details. Encourage potential clients to reach out for consultations and inquiries.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
-    },
+    // {
+    //   heading1: 'Expert Team',
+    //   heading2: '',
+    //   content: 'Introduce key team members and their expertise in political campaign support. Highlight relevant experience and successes.',
+    //   img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
+    // },
+    // {
+    //   heading1: 'Collaborations & Affiliations',
+    //   heading2: '',
+    //   content: 'Showcase any partnerships or collaborations that enhance your business\'s capabilities. Highlight affiliations with industry experts or organizations.',
+    //   img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
+    // },
+    // {
+    //   heading1: 'Contact Information &',
+    //   heading2: 'Consultation',
+    //   content: 'Provide clear and easily accessible contact details. Encourage potential clients to reach out for consultations and inquiries.',
+    //   img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/experince_bVqIjCk93.png?updatedAt=1700027778426',
+    // },
   ],
 }
 export default data

@@ -37,9 +37,9 @@ const Contact = () => {
             <Form />
           </div>
           <div className="contact_page-info">
-            <ContactInfo heading={'Business Enquiries'} num={'+91 9665675234'} email={'hello@adroythub.com'} />
+            <ContactInfo heading={'Business Enquiries'} num={'+91 9130061891'} email={'official@adroythub.com'} />
             <hr />
-            <ContactInfo heading={'Career Opportunities'} num={'+91 9665675234'} email={'hello@adroythub.com'} />
+            <ContactInfo heading={'Career Opportunities'} num={'+91 9130061891'} email={'official@adroythub.com'} />
           </div>
         </div>
       </section>

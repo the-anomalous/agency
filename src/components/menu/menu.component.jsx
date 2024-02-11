@@ -184,7 +184,7 @@ const Menu = () => {
               icon={'fa-twitter'}
             />
           </div>
-          <p className='menu__email'>hello@adroythub.com</p>
+          <p className='menu__email'>offical@adroythub.com</p>
         </div>
       </div>
     </div>

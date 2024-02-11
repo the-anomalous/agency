@@ -11,7 +11,7 @@ const data = {
       heading2: 'Traffic',
       content:
         'SEO involves optimizing website content, structure, and links to make it more attractive to search engines. This helps improve search rankings, driving organic (non-paid) traffic.',
-      img: 'https://ik.imagekit.io/qrw1xgcj7/adryothub-media/img/project-management.png?updatedAt=1704551984716',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/advertising_RdUU8LzuD.png?updatedAt=1699981631957',
     },
     {
       heading1: 'Build Marketing',
