@@ -11,6 +11,10 @@
       margin-top: 6rem;
       width:20rem;
 
+      @media only screen and (max-width: 31.25em) {
+        width: 26rem; //00px
+      }
+
       &_name {
         margin-top: 1rem;
         text-transform: capitalize;

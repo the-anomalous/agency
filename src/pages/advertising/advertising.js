@@ -33,7 +33,7 @@ const data = {
       heading1: 'Analytics & SEO',
       heading2: '',
       content:
-        'The P in Panga stands for performance and our SEO and Analytics team delivers it with appropriate insights that have the ability to transform your business.',
+        'Our performance and our SEO and Analytics team delivers it with appropriate insights that have the ability to transform your business.',
       img: 'https://socialpanga.com/wp-content/uploads/2021/04/03-service-gif-analytics-seo.gif',
     },
     {
