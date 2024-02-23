@@ -10,7 +10,7 @@ const data = {
       heading1: 'Strategic Planning',
       heading2: '',
       content:'Emphasize your expertise in developing strategic campaign plans. Highlight the importance of a well-thought-out strategy in achieving campaign goals.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/webaite-traffic_xV1zx5Vr2.png?updatedAt=1700135277910',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/customer-segmentation-in-mind_J0jSP4ET2F.png?updatedAt=1700138808733',
     },
     {
       heading1: 'Digital Campaigning',
@@ -22,7 +22,7 @@ const data = {
       heading1: 'Event Coordination',
       heading2: '',
       content: 'Detail how your business can assist in organizing impactful campaign events. Highlight past successful events to showcase your experience.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/customer-segmentation-in-mind_J0jSP4ET2F.png?updatedAt=1700138808733',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/marketing-strategy_mxf8VpQ_uS.png?updatedAt=1700135555614',
     },
     {
       heading1: 'Data-Driven',
@@ -34,7 +34,7 @@ const data = {
       heading1: 'Tailored Solutions',
       heading2: '',
       content: 'Stress your ability to provide customized solutions based on each party\'s unique needs. Showcase flexibility in adapting to different campaign styles and objectives.',
-      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/marketing-strategy_mxf8VpQ_uS.png?updatedAt=1700135555614',
+      img: 'https://ik.imagekit.io/ml22hal4lxj/adroyt_images/webaite-traffic_xV1zx5Vr2.png?updatedAt=1700135277910',
     },
     {
       heading1: 'Success Stories &',
