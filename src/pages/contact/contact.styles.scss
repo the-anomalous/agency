@@ -2,6 +2,20 @@
   &_map {
     position: absolute;
     inset: 0;
+  
+    @media only screen and (max-width: 37.5em) {
+      display: none; //600px
+    }
+
+    &-mobile {
+      display: none;
+      margin-top: 8rem;
+
+      @media only screen and (max-width: 37.5em) {
+        display: block; //600px
+        height: 42rem;
+      } 
+    }
   }
 
   &_wrapper {

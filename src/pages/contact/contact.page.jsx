@@ -22,9 +22,9 @@ const Contact = () => {
         <div className='contact_page_wrapper'>
           <div className='contact_page-heading'>
             <h3 className='contact_page-h3'>
-              Aapke Ek Ek Sawal <br /> Humaare Do Do Jawab
+              AdroytHub Pvt. Ltd.
             </h3>
-            <p className='contact_page-subheading'>AdroytHub Pvt. Ltd.</p>
+            {/* <p className='contact_page-subheading'>AdroytHub Pvt. Ltd.</p> */}
             <p className='contact_page-text'>
               One of the leading digital marketing agency in Pune. Write to us
               about any doubts, We would be glad to discuss your business
@@ -42,6 +42,9 @@ const Contact = () => {
             <ContactInfo heading={'Career Opportunities'} num={'+91 9130061891'} email={'official@adroythub.com'} />
           </div>
         </div>
+        <div className='contact_page_map-mobile'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.864935893867!2d73.84665057453688!3d18.53500466873446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0841ff0f2d1%3A0xc029665f68dc9d93!2sALANKAR%20APARTMENT!5e0!3m2!1sen!2sin!4v1700325313952!5m2!1sen!2sin" width="100%" height="100%" style={{border:'0'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       </section>
     </main>
   )
